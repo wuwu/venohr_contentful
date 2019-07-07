@@ -1,0 +1,75 @@
+@import "abstracts/settings";
+@import "abstracts/mixins";
+
+body {
+  font-family: $sans-font;
+  font-size: 18px;
+  line-height: 1.16;
+  background: $white;
+  font-weight: 300;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu {
+  list-style: none;
+  li {
+    text-align: right;
+  }
+}
+
+.title {
+  font-family: $sans-font;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.content {
+  .body {
+    p {
+      margin: 1em 0;
+    }
+  }
+}
+
+.navigation {
+  width: 100vw;
+  @include app-margin;
+}
+
+@include tablet {
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #prozess .body {
+    padding-left: 156px;
+    padding-right: 156px;
+  }
+}
+
+#intro {
+  .section--name {
+    display: none;
+  }
+}
+
+// #yella-venohr {
+//   .body {
+//     display: flex;
+//     flex-direction: row-reverse;
+
+//     p:nth-child(1){
+//       flex-grow: 1;
+//     }
+//     p:nth-child(2) {
+//       width: 251px;
+//       flex: 0 0 250px;
+//       padding-right: 30px;
+//     }
+//   }
+// }
