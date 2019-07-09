@@ -10,7 +10,7 @@
         <div class="content">
             <div v-if="post.fields.heroText" v-html="$md.render(post.fields.heroText)" class="body"></div>
             <h2 class="title is-2 primary is-centered">{{post.fields.title}}</h2>
-            <div v-html="$md.render(post.fields.sectionBody)" class="body"></div>
+            <div v-html="post.fields.sectionBody" class="body"></div>
 
         </div>
     </div>
