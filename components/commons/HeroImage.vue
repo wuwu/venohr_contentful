@@ -3,9 +3,6 @@
         <figure>
             <img :src="image" alt="venohr consult">
             <figcaption v-if="caption" v-html="caption"></figcaption>
-            
-            <h3>debug</h3>
-            <pre>{{contentful}}</pre>
         </figure>
     </div>
 </template>
